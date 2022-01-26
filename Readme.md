@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Elena    Mihailova](https://up.htmlacademy.ru/htmlcss/33/user/1959447).
+* Студент: [Elena Mihailova](https://up.htmlacademy.ru/htmlcss/33/user/1959447).
 * Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol-fw).
 
 ---
