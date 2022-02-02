@@ -1,0 +1,228 @@
+@font-face {
+	font-family: "Inter";
+	src: url("fonts/inter-400.woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("fonts/inter-700.woff2");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("fonts/inter-900.woff2");
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: #feafc3;
+	color: #565c66;
+	margin-left: 98px;
+	margin-right: 98px;
+}
+header {
+	line-height: 20px;
+	color: #2d3440;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.contacts-phone {
+	font-weight: 700;
+}
+.slider_title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 46px;
+	color: #2d3440;
+	text-align: left;
+}
+.offers_title {
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 46px;
+	color: #2d3440;
+	text-align: center;
+}
+.offers_item_button {
+	background: #fcfcfc;
+	border: 4px solid rgba(252, 252, 252, 0.4);
+	border-radius: 26px;
+	color: #2d3440;
+	font-weight: 700;
+	padding: 12px 32px;
+}
+
+.offers_item_title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	color: #2d3440;
+}
+.popular_title {
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 46px;
+	color: #2d3440;
+	text-align: center;
+}
+.popular_item_title {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #2d3440;
+}
+.offers_item {
+	display: inline-block;
+	background-color: #ff7799;
+	background-size: 570px 268px;
+	border-radius: 16px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+}
+
+.popular_item {
+	background-color: #fcfcfc;
+	text-align: center;
+	border-radius: 8px;
+}
+.cart_logo {
+	background-color: #ff2f64;
+	width: 32px;
+	height: 32px;
+	border-radius: 26px;
+	align-items: center;
+	padding: 8px 11px;
+}
+
+.price_item {
+	font-size: 20px;
+	color: #2d3440;
+	font-weight: 700;
+}
+
+.advantages {
+	background-image: url("../images/waffle_back.jpg");
+	border-radius: 16px;
+	background-size: 100% auto;
+	padding: 24px;
+	margin-bottom: 80px;
+}
+.advantages_background {
+	background-color: #fcfcfc;
+	border-radius: 16px;
+	padding: 56px 40px;
+}
+.advantages_title {
+	text-align: center;
+	font-weight: 900;
+	color: #2d3440;
+	font-size: 32px;
+	line-height: 46px;
+}
+.news_blog {
+	background-image: url("../images/ice_news.png");
+	border-radius: 16px;
+	background-size: 570px 220px;
+	background-repeat: no-repeat;
+	text-align: left;
+	vertical-align: top;
+	padding: 32px;
+	margin-bottom: 80px;
+}
+.news_blog_title {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+}
+.news_blog_text {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.newsletter {
+	display: inline-block;
+	background-image: url("../images/mail.png");
+	border-radius: 16px;
+	background-repeat: no-repeat;
+	background-size: 570px 220px;
+	padding: 6px;
+	margin-bottom: 80px;
+}
+.newsletter_background {
+	display: block;
+	background-color: #fcfcfc;
+	border-radius: 16px;
+	display: inline-block;
+	background-size: 558px 208px;
+	background-position: center center;
+	padding: 10px;
+}
+
+.delivery {
+	display: inline-block;
+	background-image: url("../images/ice_delivery.png");
+	border-radius: 16px;
+	background-repeat: no-repeat;
+	padding-left: 100px;
+	margin-bottom: 80px;
+}
+.delivery_titel {
+	font-size: 32px;
+	line-height: 46px;
+	font-weight: 900;
+	color: #2d3440;
+}
+.button {
+	background-color: #ff2f64;
+	border-radius: 26px;
+	border: 4px solid rgba(255, 47, 100, 0.3);
+	color: #fcfcfc;
+	font-weight: 700;
+	padding: 13px 32px;
+}
+.delivery_form {
+	background-color: #fcfcfc;
+	border-radius: 8px;
+}
+.contacts {
+	background-image: url("../images/Contacts.png");
+	border-radius: 16px;
+	background-repeat: no-repeat;
+	background-size: 1170px 492px;
+	padding: 64px 64px;
+	background-position: center;
+}
+.contacts_titel {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #565c66;
+}
+.contacts_address,
+.contacts_tel_bold {
+	font-size: 20px;
+	line-height: 24px;
+	color: #2d3440;
+}
+
+footer {
+	color: #2d3440;
+}
+.documents {
+	font-size: 14px;
+	line-height: 20px;
+}
