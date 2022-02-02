@@ -13,12 +13,12 @@
 <body>
   <header class="page_header">
     <a class="navigation_logo" href="index.html">
-      <img class="page_header_logo" src="images/logo.svg" width="137px" height="56px">
+      <img class="page_header_logo" src="images/logo.svg" width="137" height="56" alt="Логотип">
     </a>
     <nav class="navigation">
       <ul class="navigation_list">
         <li class="navigation_item">
-          <a class="navigation_link">Каталог</a>
+          <a class="navigation_link navigation_link_aktiv">Каталог</a>
         </li>
         <li class="navigation_item">
           <a class="navigation_link" href="#">Доставка и оплата</a>
@@ -34,17 +34,19 @@
       </li>
       <li class="info_item">
         <a class="info_link" href="#">
-          <span class="visually-hidden">Поиск</span>
           <img src="images/search.svg" width="18" height="18" alt="Поиск">
+          <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="info_item">
         <a class="info_link" href="#">
+          <img class="info_link_login" src="images/Log-in.svg" width="18" height="18" alt="Вход">
           <span class="visually-hidden">Вход</span>
         </a>
       </li>
       <li class="info_item">
         <a class="info_link" href="#">
+          <img class="info_link_corb" src="images/Union.svg" width="16" height="15" alt="Корзина_лого"> 
           <span class="visually-hidden">Корзина</span>
         </a>
       </li>
@@ -55,12 +57,14 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs_item">
           <a class="breadcrumbs_link" href="index.html">Главная</a>
+          <img src="images/Union_1.svg" width="7" height="6" alt="Кавычки спецсимвол">
         </li>
         <li class="breadcrumbs_item">
           <a class="breadcrumbs_link" href="#">Каталог</a>
+          <img src="images/Union_1.svg" width="7" height="6" alt="Кавычки спецсимвол">
         </li>
         <li class="breadcrumbs_item">
-          <a class="breadcrumbs_link breadcrumbs_link_active">Сливочное</a>
+          <a class="breadcrumbs_link_active">Сливочное</a>
         </li>
       </ul>
       <h1 class="inner_header_title">Сливочное мороженое</h1>
@@ -142,7 +146,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button" type="submit">Применить</button>
+        <button class="button_select" type="submit">Применить</button>
       </form>
       <ul class="product_list">
         <li class="product_card">
@@ -151,84 +155,108 @@
           <h3 class="product_card_title">Малинка</h3>
           <p class="product_card_description">Сливочное мороженое с малиновым джемом</p>
           <b class="product_card_price">310 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/pistachio-foto.jpg" alt="Фисташка" width="168" height="168">
           <h3 class="product_card_title">Фисташка</h3>
           <p class="product_card_description">Фисташковый пломбир с кусочками шоколада</p>
           <b class="product_card_price">340 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/blueberry-foto.jpg" alt="Черника" width="168" height="168">
           <h3 class="product_card_title">Черника</h3>
           <p class="product_card_description">Крем-брюле с черничным джемом</p>
           <b class="product_card_price">330 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#">
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+            </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/bubble.jpg" alt="Бабл-гам" width="168" height="168">
           <h3 class="product_card_title">Бабл-гам</h3>
           <p class="product_card_description">Ванильный пломбир со сладкой посыпкой</p>
           <b class="product_card_price">320 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/blackberry.jpg" alt="Ежевика" width="168" height="168">
           <h3 class="product_card_title">Ежевика</h3>
           <p class="product_card_description">Сливочное мороженое с ежевичным джемом</p>
           <b class="product_card_price">330 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/banana.jpg" alt="Банан" width="168" height="168">
           <h3 class="product_card_title">Банан</h3>
           <p class="product_card_description">Сливочный пломбир с банановым вкусом</p>
           <b class="product_card_price">340 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/chocolate.jpg" alt="Шоколадка" width="168" height="168">
           <h3 class="product_card_title">Шоколадка</h3>
           <p class="product_card_description">Классический шоколадный пломбир</p>
           <b class="product_card_price">270 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/strawberry.jpg" alt="Клубничка" width="168" height="168">
           <h3 class="product_card_title">Клубничка</h3>
           <p class="product_card_description">Сливочный пломбир с клубничным вкусом</p>
           <b class="product_card_price">330 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/lime.jpg" alt="Лимон" width="168" height="168">
           <h3 class="product_card_title">Лимон</h3>
           <p class="product_card_description">Освежающий лимонный сорбет</p>
           <b class="product_card_price">310 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/menthol.jpg" alt="Ментол" width="168" height="168">
           <h3 class="product_card_title">Ментол</h3>
           <p class="product_card_description">Сливочный пломбир с ментоловым сиропом</p>
           <b class="product_card_price">320 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/nuts.jpg" alt="Орешек" width="168" height="168">
           <h3 class="product_card_title">Орешек</h3>
           <p class="product_card_description">Фисташковый пломбир с шоколадным сиропом</p>
           <b class="product_card_price">360 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#">
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
         <li class="product_card">
           <img class="product_card_img" src="images/creme.jpg" alt="Крем-брюле" width="168" height="168">
           <h3 class="product_card_title">Крем-брюле</h3>
           <p class="product_card_description">Классическое крем-брюле</p>
           <b class="product_card_price">280 ₽/кг</b>
-          <a class="product_card_button button" href="#"> <span class="visually-hidden">Корзина</span></a>
+          <a class="product_card_button" href="#"> 
+            <img class="cart_logo" src="images/cart.svg" width="14" height="14" alt="Корзина логотип">
+          </a>
         </li>
       </ul>
     </section>
@@ -236,6 +264,7 @@
     <ul class="pagination_list">
       <li class="pagination_item">
         <a class="pagination_link pagination_prev pagination_disabled" href="#">
+          <img src="images/arrow_pag.svg" alt="Спецсимвол стрелка">
           <span class="visually-hidden">Предыдущая страница</span>
         </a>
       </li>
@@ -256,6 +285,7 @@
       </li>
       <li class="pagination_item">
         <a class="pagination_link pagination_next" href="#">
+          <img src="images/arrow_pag.svg" alt="Спецсимвол стрелка">
           <span class="visually-hidden">Следующая страница</span>
         </a>
       </li>

@@ -114,14 +114,18 @@ a {
 }
 
 .advantages {
+	display: inline-block;
 	background-image: url("../images/waffle_back.jpg");
 	border-radius: 16px;
-	background-size: 100% auto;
+	background-size: 1170px 480px;
+	background-repeat: no-repeat;
 	padding: 24px;
 	margin-bottom: 80px;
 }
 .advantages_background {
+	display: inline-block;
 	background-color: #fcfcfc;
+	background-size: 1122px 432px;
 	border-radius: 16px;
 	padding: 56px 40px;
 }
@@ -225,4 +229,68 @@ footer {
 .documents {
 	font-size: 14px;
 	line-height: 20px;
+}
+/*----Каталог----*/
+.navigation_link_aktiv {
+	background: #ff4a78;
+	border-radius: 26px;
+	color: #fcfcfc;
+	padding: 8px 16px;
+}
+
+.breadcrumbs_item {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+}
+.breadcrumbs_link {
+	border-bottom: 1px solid #2d3440;
+}
+.catalog_filter_group {
+	color: #2d3440;
+}
+.inner_header_title {
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 46px;
+}
+.button_select {
+	background: rgba(252, 252, 252, 0.3);
+	border: 2px solid #fcfcfc;
+	border-radius: 20px;
+	font-size: 14px;
+	color: #2d3440;
+	padding: 8px 53px;
+}
+.product_card {
+	background-color: #fcfcfc;
+	border-radius: 8px;
+	text-align: center;
+	padding: 40px 10px;
+	margin-bottom: 91px;
+}
+.product_card_title,
+.product_card_price {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #2d3440;
+}
+.pagination_button {
+	background: #fcfcfc;
+	border: 4px solid rgba(252, 252, 252, 0.4);
+	border-radius: 26px;
+	padding: 12px 32px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.pagination_current {
+	background-color: #fcfcfc;
+	border-radius: 50px;
+	padding: 2px 8px;
+	margin: 10px 0;
+}
+.pagination_link {
+	line-height: 20px;
+	color: #2d3440;
 }
