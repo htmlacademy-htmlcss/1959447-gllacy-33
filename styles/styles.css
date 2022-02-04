@@ -1,20 +1,20 @@
 @font-face {
 	font-family: "Inter";
-	src: url("fonts/inter-400.woff2");
+	src: url("../fonts/inter-400.woff2");
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
 }
 @font-face {
 	font-family: "Inter";
-	src: url("fonts/inter-700.woff2");
+	src: url("../fonts/inter-700.woff2");
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
 }
 @font-face {
 	font-family: "Inter";
-	src: url("fonts/inter-900.woff2");
+	src: url("../fonts/inter-900.woff2");
 	font-style: normal;
 	font-weight: 900;
 	font-display: swap;
@@ -27,12 +27,17 @@ body {
 	color: #565c66;
 	margin-left: 98px;
 	margin-right: 98px;
+	text-decoration: none;
 }
 header {
 	line-height: 20px;
 	color: #2d3440;
 }
-a {
+.page_header a,
+.main_index a,
+.page_footer a,
+.main_inner a,
+.inner_header a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -46,12 +51,21 @@ a {
 	color: #2d3440;
 	text-align: left;
 }
+.slider_text {
+	color: #2d3440;
+	text-align: left;
+}
+.offers,
+.news_blog_text,
+.delivery_date,
+.delivery_tel,
+.delivery_address {
+	color: #2d3440;
+}
 .offers_title {
 	font-weight: 900;
 	font-size: 32px;
 	line-height: 46px;
-	color: #2d3440;
-	text-align: center;
 }
 .offers_item_button {
 	background: #fcfcfc;
@@ -61,7 +75,6 @@ a {
 	font-weight: 700;
 	padding: 12px 32px;
 }
-
 .offers_item_title {
 	font-weight: 700;
 	font-size: 24px;
@@ -92,7 +105,6 @@ a {
 	padding-right: 40px;
 	padding-top: 40px;
 }
-
 .popular_item {
 	background-color: #fcfcfc;
 	text-align: center;
@@ -106,28 +118,26 @@ a {
 	align-items: center;
 	padding: 8px 11px;
 }
-
 .price_item {
 	font-size: 20px;
 	color: #2d3440;
 	font-weight: 700;
 }
-
 .advantages {
-	display: inline-block;
 	background-image: url("../images/waffle_back.jpg");
 	border-radius: 16px;
-	background-size: 1170px 480px;
+	background-size: 1170px auto;
 	background-repeat: no-repeat;
 	padding: 24px;
 	margin-bottom: 80px;
 }
 .advantages_background {
-	display: inline-block;
 	background-color: #fcfcfc;
-	background-size: 1122px 432px;
+	background-size: 1122px auto;
 	border-radius: 16px;
 	padding: 56px 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .advantages_title {
 	text-align: center;
@@ -135,16 +145,6 @@ a {
 	color: #2d3440;
 	font-size: 32px;
 	line-height: 46px;
-}
-.news_blog {
-	background-image: url("../images/ice_news.png");
-	border-radius: 16px;
-	background-size: 570px 220px;
-	background-repeat: no-repeat;
-	text-align: left;
-	vertical-align: top;
-	padding: 32px;
-	margin-bottom: 80px;
 }
 .news_blog_title {
 	font-size: 16px;
@@ -156,9 +156,7 @@ a {
 	line-height: 30px;
 	font-weight: 700;
 }
-
 .newsletter {
-	display: inline-block;
 	background-image: url("../images/mail.png");
 	border-radius: 16px;
 	background-repeat: no-repeat;
@@ -167,7 +165,6 @@ a {
 	margin-bottom: 80px;
 }
 .newsletter_background {
-	display: block;
 	background-color: #fcfcfc;
 	border-radius: 16px;
 	display: inline-block;
@@ -175,9 +172,7 @@ a {
 	background-position: center center;
 	padding: 10px;
 }
-
 .delivery {
-	display: inline-block;
 	background-image: url("../images/ice_delivery.png");
 	border-radius: 16px;
 	background-repeat: no-repeat;
@@ -222,13 +217,16 @@ a {
 	line-height: 24px;
 	color: #2d3440;
 }
-
 footer {
 	color: #2d3440;
 }
 .documents {
 	font-size: 14px;
 	line-height: 20px;
+}
+.info_academy {
+	font-size: 12px;
+	line-height: 16px;
 }
 /*----Каталог----*/
 .navigation_link_aktiv {
@@ -237,7 +235,6 @@ footer {
 	color: #fcfcfc;
 	padding: 8px 16px;
 }
-
 .breadcrumbs_item {
 	font-size: 14px;
 	line-height: 20px;
