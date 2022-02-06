@@ -46,7 +46,8 @@
       </li>
     </ul>
   </header>
-  <main class="main_inner">
+  <main class="main_inner main-container">
+    <div class="page_container">
     <header class="inner_header">
       <ul class="breadcrumbs">
         <li class="breadcrumbs_item">
@@ -62,7 +63,8 @@
       <h1 class="inner_header_title">Сливочное мороженое</h1>
     </header>
     <section class="catalog_products">
-      <h2 class="visually-hidden">Список сортов с фильтрами</h2>
+      <h2 hidden class="visually-hidden">Список сортов с фильтрами</h2>
+      <div class="catalog_filter_container">   
       <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog_filter_group">
           <legend class="catalog_filter_group_title">Сортировка</legend>
@@ -140,6 +142,7 @@
         </fieldset>
         <button class="button_select" type="submit">Применить</button>
       </form>
+    </div>
       <ul class="product_list">
         <li class="product_card">
           <img class="product_card_img" src="images/raspberry-foto.jpg" alt="Шарик малинового мороженого" width="168"
@@ -268,8 +271,10 @@
         </a>
       </li>
     </ul>
+  </div>
   </main>
   <footer class="page_footer">
+    <div class="page-footer-container">  
     <ul class="socials_list">
       <li class="socials_item">
         <a class="button_social" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span>
@@ -310,6 +315,7 @@
         © 2021
       </p>
     </div>
+  </div>
   </footer>
 </body>
 </html>
