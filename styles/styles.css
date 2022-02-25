@@ -106,17 +106,20 @@ body {
 	background-position: center;
 	padding: 8px 16px;
 }
+.navigation_item:focus {
+	border: 2px solid #2D3440;
+	box-sizing: border-box;
+	border-radius: 26px;
+	outline: none;
+	padding: 8px 16px;
+}
 .navigation_item:active {
 	background-color: rgb(252, 252, 252);
 	border-radius: 26px;
 	background-position: center;
 	padding: 8px 16px;
 }
-.navigation_item:focus {
-	border: 2px solid #2D3440;
-	box-sizing: border-box;
-	border-radius: 26px;
-}
+
 .info-user {
 	display: flex;
 	flex-wrap: wrap;
