@@ -33,17 +33,20 @@
           <a class="contacts-phone link" href="tel:+78005558628">+7 800 555-86-28</a>
         </li>
         <li class="info_item">
-          <a class="info_link link" href="#">
-           <span class="visually-hidden">Поиск</span>
+          <a class="info_link link link_search" href="#">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.913 8.246a5.333 5.333 0 1 1 9.17 3.705.655.655 0 0 0-.132.132 5.333 5.333 0 0 1-9.038-3.837Zm9.552 5.162a6.667 6.667 0 1 1 .943-.943l2.81 2.81a.667.667 0 0 1-.943.943l-2.81-2.81Z" fill="#2D3440"/></svg>
+            <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="info_item">
-          <a class="info_link link link" href="#">
-            <span class="visually-hidden">Вход</span>
+          <a class="info_link link link_log" href="#">
+           <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.208 1.875c0-.368.299-.667.667-.667h3a2.167 2.167 0 0 1 2.167 2.167v10.5a2.167 2.167 0 0 1-2.167 2.167h-3a.667.667 0 0 1 0-1.334h3a.833.833 0 0 0 .833-.833v-10.5a.833.833 0 0 0-.833-.833h-3a.667.667 0 0 1-.667-.667ZM6.654 4.404c.26-.26.682-.26.942 0l3.746 3.745a.664.664 0 0 1 0 .952l-3.746 3.746a.667.667 0 0 1-.942-.943l2.612-2.612H1.875a.667.667 0 0 1 0-1.333h7.39L6.655 5.346a.667.667 0 0 1 0-.943Z" fill="#2D3440"/></svg>
+           <span class="visually-hidden">Вход</span>
           </a>
         </li>
         <li class="info_item">
-          <a class="info_link link" href="#">
+          <a class="info_link link link_corb" href="#">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313ZM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001Zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0Zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0Z" fill="#2D3440"/></svg>
             <span class="visually-hidden">Корзина</span>
           </a>
         </li>
@@ -61,21 +64,34 @@
               <a href="#" class="button_cart link">Заказать</a>
             </div>
             <div class="image_slider">
-              <img class="img_slider" src="images/ice_main1.png" alt="Пломбир с клубничным джемом" width="306"
-                height="507">
+              <div class="image_slider_active">
+                <button class="slider_button slider_prev" type="button"><span class="visually-hidden">Предыдущее фото
+                </span></button>
+                <div class="circle_img">
+                  <img class="img_slider_active" src="images/ice_main1.png" alt="Пломбир с клубничным джемом" width="306" height="507">
+                </div>
+                <button class="slider_button slider_next" type="button"><span class="visually-hidden">Следующее фото</span></button>
+              </div>
+              <div class="circle_img_back">
+                <img class="img_slider_back" src="images/ice_main2.png" alt="Банановое мороженое" width="306" height="507">
+              </div>
+              <div class="circle_img_back">
+                <img class="img_slider_back" src="images/ice_main3.png" alt="Карамельный пломбир" width="306" height="507">
+              </div>
             </div>
           </li>
-          <li class="slider_options_item">
+          <li class="slider_options_item slider_options_item_hidden">
             <div class="slider_text">
               <h2 class="slider_title">Сливочное мороженое со вкусом банана</h2>
               <p class="slider_description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день. </p>
               <a href="#" class="button_cart link">Заказать</a>
+              
             </div>
             <div class="image_slider">
               <img class="img_slider" src="images/ice_main2.png" alt="Банановое мороженое" width="306" height="507">
             </div>
           </li>
-          <li class="slider_options_item">
+          <li class="slider_options_item slider_options_item_hidden">
             <div class="slider_text">
               <h2 class="slider_title">Карамельный пломбир с маршмеллоу</h2>
               <p class="slider_description">Необычный сладкий десерт с карамельным топпингом и
@@ -87,6 +103,7 @@
             </div>
           </li>
         </ul>
+        <!---
         <div class="slider_button">
           <button class="slider_prev" type="button"><span class="visually-hidden">Предыдущее фото
             </span>
@@ -95,23 +112,8 @@
             </span>
           </button>
         </div>
-        <div class="slider_bottom">
-          <ul class="socials_list">
-            <li class="socials_item">
-              <a class="button_social" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="socials_item">
-              <a class="button_social" href="https://www.facebook.com/htmlacademy"><span
-                  class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="socials_item">
-              <a class="button_social link" href="https://www.instagram.com/htmlacademy/"><span
-                  class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-          </ul>
+      ---->
+        <div class="slider_bottom">        
           <ul class="slider_pagination_list">
             <li class="slider_pagination">
               <a href="#" class="slider_pagination_button slider_pagination_button_active link"><span class="visually-hidden">
@@ -126,10 +128,26 @@
                   Слайд 3</span></a>
             </li>
           </ul>
+          <ul class="socials_list">
+            <li class="socials_item">
+              <a class="button_social social_link_vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="socials_item">
+              <a class="button_social social_link_fb" href="https://www.facebook.com/htmlacademy"><span
+                  class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="socials_item">
+              <a class="button_social link social_link_inst" href="https://www.instagram.com/htmlacademy/"><span
+                  class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="offers">
-        <h2 class="offers_title">Заказывайте мороженое <br> и получайте подарки!</h2>
+        <h2 class="offers_title">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="offers_list">
           <li class="offers_item">
             <div class="offers_text">
@@ -147,7 +165,7 @@
               совершенно бесплатно.</p>
             <a class="offers_item_button link" href="#">Хочу подарок</a>
             </div>            
-            <img class="offers_item_img" src="images/marshmallow.png" alt="Зефир и рожок мороженого" width="224" height="249">
+            <img class="offers_item_img" src="images/marshmallow.png" alt="Зефир и рожок мороженого" width="201" height="249">
           </li>
         </ul>
       </section>
@@ -159,8 +177,11 @@
             <div class="product_card_content">
               <h3 class="product_card_title">Малинка</h3>
               <p class="product_card_description">Сливочное мороженое с малиновым джемом</p>
-              <p class="product_card_price">310 <span>₽/кг</span></p>
-              <a href="#" class="product_card_button link"><span class="visually-hidden">Заказать</span></a>
+              <div class="product_card_buy">
+                <p class="product_card_price">310 <span>₽/кг</span></p>
+                <a href="#" class="product_card_button link">
+                <span class="visually-hidden">Заказать</span></a>
+              </div>                
             </div>
           </li>
           <li class="product_card">
@@ -170,7 +191,8 @@
               <p class="product_card_description">Фисташковый пломбир с кусочками шоколада</p>
               <div class="product_card_buy">
                 <p class="product_card_price">340 <span>₽/кг</span></p>
-                <a href="#" class="product_card_button link"><span class="visually-hidden">Заказать</span></a>
+                <a href="#" class="product_card_button link">
+                <span class="visually-hidden">Заказать</span></a>
               </div>              
             </div>     
           </li>
@@ -255,24 +277,24 @@
         <form class="delivery_form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="delivery_form_descriprion">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <p class="field_group delivery_form_date">
-            <label class="form_label" for="delivery_date">Дата
+            <label class="form_label form_date" for="delivery_date">Дата
               <button class="info">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
             </label>
-            <input type="date" required id="delivery_date" name="delivery-date">
+            <input class="input_form" type="date" required id="delivery_date" name="delivery-date">
           </p>
           <p class="field_group delivery_form_phone">
             <label class="form_label" for="delivery_tel">Телефон</label>
-            <input type="tel" placeholder="+7 800 999-00-00" id="delivery_tel" name="delivery-tel">
+            <input class="input_form" type="tel" placeholder="+7 800 999-00-00" id="delivery_tel" name="delivery-tel">
           </p>
           <p class="field_group delivery_form_address">
-            <label class="form_label" for="delivery_address">Адрес
+            <label class="form_label form_date" for="delivery_address">Адрес
               <button class="info">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
             </label>
-            <input type="text" placeholder="ул. Большая Конюшенная, 19/8" required id="delivery_address"
+            <input class="input_form" type="text" placeholder="ул. Большая Конюшенная, 19/8" required id="delivery_address"
               name="delivery-address">
           </p>
           <button class="button delivery_submit" type="submit">Отправить</button>
@@ -292,23 +314,23 @@
       <div class="page-footer-container">  
       <ul class="socials_list">
         <li class="socials_item">
-          <a class="button_social" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span>
+          <a class="button_social social_link_vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="socials_item">
-          <a class="button_social link" href="https://www.facebook.com/htmlacademy"><span
+          <a class="button_social link social_link_fb" href="https://www.facebook.com/htmlacademy"><span
               class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li class="socials_item">
-          <a class="button_social link" href="https://www.instagram.com/htmlacademy/"><span
+          <a class="button_social link social_link_inst" href="https://www.instagram.com/htmlacademy/"><span
               class="visually-hidden">Инстаграм</span>
           </a>
         </li>
       </ul>
       <div class="documents">
         <ul class="documents_list">
-          <li class="documents_item"><b>Для
+          <li class="documents_item documents_item_heart"><b>Для
               поставщиков</b></li>
           <li class="documents_item">
             <a class="documents_link link" href="#">О производстве</a>
