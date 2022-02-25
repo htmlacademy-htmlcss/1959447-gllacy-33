@@ -86,7 +86,6 @@ body {
 	margin: 0;
 	color: #2D3440;
 }
-
 .navigation_list {
 	display: flex;
 	justify-content: space-between;
@@ -101,7 +100,23 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 }
-
+.navigation_item:hover {
+	background-color: rgb(252, 252, 252, 0.5);
+	border-radius: 26px;
+	background-position: center;
+	padding: 8px 16px;
+}
+.navigation_item:active {
+	background-color: rgb(252, 252, 252);
+	border-radius: 26px;
+	background-position: center;
+	padding: 8px 16px;
+}
+.navigation_item:focus {
+	border: 2px solid #2D3440;
+	box-sizing: border-box;
+	border-radius: 26px;
+}
 .info-user {
 	display: flex;
 	flex-wrap: wrap;
@@ -118,6 +133,17 @@ body {
 	background-color: rgb(252, 252, 252, 0.3);
 	background-position: center;
 	border-radius: 50%;
+}
+.info_link:hover {
+	background-color: rgb(252, 252, 252, 0.5);
+}
+.info_link:focus {
+	background-color: rgb(252, 252, 252, 0.5);
+	border: 2px solid #2D3440;
+}
+.info_link:active {
+	background-color: rgb(252, 252, 252);
+	border: none;
 }
 .link_search {
 	padding: 9px;
@@ -583,10 +609,10 @@ body {
 .field_newsletter_email {
 	grid-column: 1/2;
 	grid-row: 2/3;
-	border: 3px solid #B9B9B9;
 	color: #B9B9B9;
 	border-radius: 4px;
-	padding: 0;
+	padding: 14px;
+	border: 1px solid #B9B9B9;
 }
 .newsletter_button {
 	grid-column: 2/3;
