@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="page_container">
-    <header class="page_header">
+    <header class="page_header page_header_catalog">
       <a class="navigation_logo link" href="index.html">
         <img class="page_header_logo" src="images/logo.svg" width="137" height="56" alt="Логотип">
       </a>
@@ -26,26 +26,28 @@
           </li>
         </ul>
       </nav>
+      <div class="contacts_info">
+        <a class="contacts-phone link" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="info-user">
         <li class="info_item">
-          <a class="contacts-phone link" href="tel:+78005558628">+7 800 555-86-28</a>
-        </li>
-        <li class="info_item">
-          <a class="info_link link" href="#">
+          <a class="info_link link link_search" href="#">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.913 8.246a5.333 5.333 0 1 1 9.17 3.705.655.655 0 0 0-.132.132 5.333 5.333 0 0 1-9.038-3.837Zm9.552 5.162a6.667 6.667 0 1 1 .943-.943l2.81 2.81a.667.667 0 0 1-.943.943l-2.81-2.81Z" fill="#2D3440"/></svg>
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="info_item">
-          <a class="info_link link" href="#">
-            <span class="visually-hidden">Вход</span>
+          <a class="info_link link link_log" href="#">
+           <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.208 1.875c0-.368.299-.667.667-.667h3a2.167 2.167 0 0 1 2.167 2.167v10.5a2.167 2.167 0 0 1-2.167 2.167h-3a.667.667 0 0 1 0-1.334h3a.833.833 0 0 0 .833-.833v-10.5a.833.833 0 0 0-.833-.833h-3a.667.667 0 0 1-.667-.667ZM6.654 4.404c.26-.26.682-.26.942 0l3.746 3.745a.664.664 0 0 1 0 .952l-3.746 3.746a.667.667 0 0 1-.942-.943l2.612-2.612H1.875a.667.667 0 0 1 0-1.333h7.39L6.655 5.346a.667.667 0 0 1 0-.943Z" fill="#2D3440"/></svg>
+           <span class="visually-hidden">Вход</span>
           </a>
         </li>
         <li class="info_item">
-          <a class="info_link link" href="#">
+          <a class="info_link link link_corb" href="#">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313ZM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001Zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0Zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0Z" fill="#2D3440"/></svg>
             <span class="visually-hidden">Корзина</span>
           </a>
         </li>
-      </ul>
+      </div>
     </header>
     <main class="main_inner main-container">
       
@@ -83,7 +85,7 @@
                 <li class="catalog_filter_item">
                   <label class="control">
                     <input class="control-input" type="radio" name="Жирность" value="0">
-                    0
+                    0%
                   </label>
                 </li>
                 <li class="catalog_filter_item">
@@ -155,7 +157,7 @@
                   <p class="product_card_description">Сливочное мороженое с малиновым джемом</p>
                   <div class="product_card_buy">
                     <b class="product_card_price">310 ₽/кг</b>
-                    <a class="product_card_button link" href="#"> Корзина</a>
+                    <a class="product_card_button link" href="#"> <span class="visually-hidden">Корзина</span></a>
                   </div>                 
                 </div>                  
             </li>
@@ -166,7 +168,7 @@
                 <p class="product_card_description">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">340 ₽/кг</b>
-                  <a class="product_card_button link" href="#"> Корзина</a>
+                  <a class="product_card_button link" href="#"> <span class="visually-hidden">Корзина</span></a>
                 </div>                
               </div>              
             </li>
@@ -177,7 +179,7 @@
                 <p class="product_card_description">Крем-брюле с черничным джемом</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">330 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>                
               </div>             
             </li>
@@ -188,7 +190,7 @@
                 <p class="product_card_description">Ванильный пломбир со сладкой посыпкой</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">320 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>               
               </div>              
             </li>
@@ -199,7 +201,7 @@
                 <p class="product_card_description">Сливочное мороженое с ежевичным джемом</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">330 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>
               </div>              
             </li>
@@ -210,7 +212,7 @@
                 <p class="product_card_description">Сливочный пломбир с банановым вкусом</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">340 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>               
               </div>              
             </li>
@@ -221,7 +223,7 @@
                 <p class="product_card_description">Классический шоколадный пломбир</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">270 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>                
               </div>              
             </li>
@@ -232,7 +234,7 @@
                 <p class="product_card_description">Сливочный пломбир с клубничным вкусом</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">330 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>                
               </div>              
             </li>
@@ -243,7 +245,7 @@
                 <p class="product_card_description">Освежающий лимонный сорбет</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">310 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>                
               </div>              
             </li>
@@ -254,7 +256,7 @@
                 <p class="product_card_description">Сливочный пломбир с ментоловым сиропом</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">320 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>                
               </div>
             </li>
@@ -265,7 +267,7 @@
                 <p class="product_card_description">Фисташковый пломбир с шоколадным сиропом</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">360 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>               
               </div>              
             </li>
@@ -276,7 +278,7 @@
                 <p class="product_card_description">Классическое крем-брюле</p>
                 <div class="product_card_buy">
                   <b class="product_card_price">280 ₽/кг</b>
-                  <a class="product_card_button link" href="#">Корзина</a>
+                  <a class="product_card_button link" href="#"><span class="visually-hidden">Корзина</span></a>
                 </div>              
               </div>              
             </li>
