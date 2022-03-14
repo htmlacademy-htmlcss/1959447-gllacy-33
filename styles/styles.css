@@ -224,7 +224,7 @@ body {
   display: inline-flex;
 }
 
-/* Слайдер */
+/*слайдер*/
 .slider_button {
   padding: 15px;
   background: rgba(252, 252, 252, 0.3);
@@ -503,6 +503,7 @@ body {
   padding: 0;
   height: min-content;
   padding-left: 6px;
+  flex-wrap: wrap;
 }
 
 .socials_item {
@@ -1501,6 +1502,7 @@ footer {
   align-items: center;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs_link {
@@ -1957,6 +1959,7 @@ footer {
   grid-column: 1/-1;
   justify-self: center;
   grid-row: 1/2;
+  max-width: 200px;
 }
 
 .pagination_list {
@@ -1968,6 +1971,8 @@ footer {
   padding: 0;
   margin: 0;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
 }
 
 .pagination_link {
