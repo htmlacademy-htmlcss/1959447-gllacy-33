@@ -189,7 +189,7 @@ body {
 
 .info_link:active {
   background-color: rgb(252, 252, 252);
-  border: none;
+  outline: none;
 }
 
 .link_search {
@@ -925,6 +925,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-clip: padding-box;
+  max-width: 250px;
+  display: inline-block;
 }
 
 .delivery_form {
@@ -1225,7 +1227,10 @@ footer {
   padding-bottom: 10px;
 }
 
-.navigation_link:hover+.popover_catalog {
+.navigation_link:hover+.popover_catalog,
+.navigation_link:focus+.popover_catalog,
+.popover_catalog:hover,
+.popover_catalog:focus {
   display: block;
 }
 
@@ -1247,7 +1252,10 @@ footer {
   position: relative;
 }
 
-.link_search:hover+.form_wrap {
+.link_search:hover+.form_wrap,
+.link_search:focus+.form_wrap,
+.form_wrap:hover,
+.form_wrap:focus-within {
   display: block;
 }
 
@@ -1301,7 +1309,10 @@ footer {
   padding-top: 30px;
 }
 
-.link_log:hover+.popover_auth {
+.link_log:hover+.popover_auth,
+.link_log:focus .popover_auth,
+.popover_auth:hover,
+.popover_auth:focus {
   display: block;
 }
 
@@ -1366,7 +1377,10 @@ footer {
 }
 
 /* корзина  */
-.link_corb:hover+.popover_card {
+.link_corb:hover+.popover_card,
+.link_corb:focus+.popover_card,
+.popover_card:focus,
+.popover_card:hover {
   display: block;
 }
 
@@ -1701,23 +1715,13 @@ footer {
   background-color: #fcfcfc;
 }
 
-.control_input:focus .control_mark {
+.control_input[type="radio"]:focus+.control_mark {
   border: 2px solid #fcfcfc;
-  color: #FCFCFC;
-  background-color: #E7E7E7;
-
+  ;
 }
 
-.control_input:focus+.control_mark {
-  border: 2px solid #fcfcfc;
-  color: #FCFCFC;
-  background-color: #E7E7E7;
-}
-
-.control_input:focus+.control_mark::after {
-  border: 2px solid #fcfcfc;
-  color: #FCFCFC;
-  background-color: #E7E7E7;
+.control_input[type="radio"]:checked:focus+.control_mark::after {
+  background-color: #fcfcfc;
 }
 
 
@@ -1802,8 +1806,12 @@ footer {
   background-image: url(../images/box_white.svg);
 }
 
-.control:focus+.control_mark {
-  background-image: url(../images/box_white.svg)
+.control_input[type="checkbox"]:checked:focus+.control_mark {
+  background-image: url(../images/box_full_white.svg)
+}
+
+.control_input[type="checkbox"]:focus+.control_mark {
+  background-image: url(../images/box_white.svg);
 }
 
 
