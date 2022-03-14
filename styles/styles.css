@@ -891,7 +891,7 @@ body {
   padding-bottom: 50px;
   padding-left: 100px;
   padding-right: 64px;
-  margin-bottom: 75px;
+  margin-bottom: 90px;
 }
 
 .delivery_description {
@@ -1057,7 +1057,7 @@ input[type=date] {
 }
 
 .delivery_form_address {
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 .contacts {
@@ -1072,7 +1072,7 @@ input[type=date] {
   border-radius: 8px;
   display: inline-block;
   width: 343px;
-  padding: 45px 40px 50px 40px;
+  padding: 45px 40px 40px 40px;
 }
 
 .contacts_title {
@@ -1082,7 +1082,6 @@ input[type=date] {
   color: #565c66;
   padding: 0;
   margin: 0;
-  margin-bottom: 12px;
 }
 
 .contacts_address {
@@ -1091,7 +1090,7 @@ input[type=date] {
   color: #2d3440;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .contacts_tel {
