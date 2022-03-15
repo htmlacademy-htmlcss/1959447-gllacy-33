@@ -847,26 +847,22 @@ body {
   border: 1px solid #B9B9B9;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .field:hover {
-  border-color: #2D3440;
+  outline: 1px solid #2D3440;
 }
 
 .field:active {
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
 }
 
 .field:disabled {
   background: #E7E7E7;
-  border: 1px solid #B9B9B9;
+  outline: 1px solid #B9B9B9;
 }
 
-/*.field:invalid {
-	background: #FFFFFF;
-	border: 2px solid #EA5454;
-}
-*/
 .field_newsletter_email {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -1047,13 +1043,14 @@ body {
   padding: 14px 16px;
   color: #B9B9B9;
 }
-
+.input_form_tel {
+  line-height: 20px;
+}
+.input_form_address {
+  line-height: 20px;
+}
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
-}
-
-input[type=date] {
-  padding: 12px 16px;
 }
 
 .delivery_form_address {
