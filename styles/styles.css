@@ -1198,7 +1198,19 @@ footer {
   background-position: center;
   cursor: pointer;
 }
-
+.modal_close_button:hover {
+  outline: 2px solid #ff2f64;
+}
+.modal_close_button:focus {
+  outline: 2px solid #ff2f64;
+}
+.modal_close_button:active {
+  outline: 4px solid #ff2f64;
+}
+.auth_form_modal {
+  display: flex;
+  flex-direction: column;
+ }
 .modal_title {
   font-style: normal;
   font-weight: 700;
@@ -1208,7 +1220,7 @@ footer {
 
 .auth_form_modal .field_group {
   margin: 0;
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .auth_form_modal .field {
@@ -1221,19 +1233,21 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  ;
   color: #B9B9B9;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
 }
 
-.field_group .button_feedback {
+.auth_form_modal .button_feedback {
   margin-top: 32px;
   margin-left: auto;
 }
 
 .modal_content input::-webkit-input-placeholder {
   color: #B9B9B9;
+}
+.field_text {
+  resize: vertical;
 }
 .modal-container-close {
   display: none;
